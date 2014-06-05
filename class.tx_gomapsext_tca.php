@@ -168,8 +168,8 @@ TxClimbingSites.codeAddress = function() {
 				    lat = results[0].geometry.location.mb.toFixed(6);
 				    lng = results[0].geometry.location.nb.toFixed(6);
 				} else {
-				    lat = results[0].geometry.location.ob.toFixed(6);
-				    lng = results[0].geometry.location.pb.toFixed(6);
+				    lat = results[0].d;
+				    lng = results[0].e;
 				}
 
 				formatedAddress = results[0].formatted_address
